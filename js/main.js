@@ -38,6 +38,7 @@ sr.reveal('.home__title',{});
 sr.reveal('.button',{delay: 200}); 
 sr.reveal('.home__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
+sr.reveal('.dark-icon',{ interval: 200}); 
 
 /*SCROLL ABOUT*/
 sr.reveal('.about__img',{}); 
@@ -55,6 +56,22 @@ sr.reveal('.work__img',{interval: 200});
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
+
+
+var icon = document.getElementById("dark");
+
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if (document.body.classList.contains("dark-theme")) {
+        // statement
+        icon.toggle('fa-sun');
+    } else {
+        icon.toggle('fa-moon')
+
+        // statement
+    }
+}
+
 
 
 

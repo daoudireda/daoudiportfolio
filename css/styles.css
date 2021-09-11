@@ -10,6 +10,14 @@
 :root{
   --first-color: #2db1ff;
   --second-color: #0E2431;
+  --third-color: #fff ;
+  --fourth-color: #0E2431;
+}
+.dark-theme{
+  --first-color: #fff;
+  --second-color: #2db1ff;
+  --third-color: #000106;
+  --fourth-color: #fff;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -48,15 +56,18 @@
 /*===== BASE =====*/
 *,::before,::after{
   box-sizing: border-box;
+ 
 }
 html{
   scroll-behavior: smooth;
+  
 }
 body{
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+
 }
 h1,h2,p{
   margin: 0;
@@ -73,6 +84,9 @@ img{
   max-width: 100%;
   height: auto;
   display: block;
+}
+main{
+  background-color: var(--third-color);
 }
 
 /*===== CLASS CSS ===== */
@@ -116,7 +130,8 @@ img{
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: var(--third-color);
+
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 
@@ -143,6 +158,7 @@ img{
 .nav__item{
   margin-bottom: var(--mb-4);
   text-decoration: none;
+
 }
 .nav__link{
   position: relative;
@@ -162,6 +178,7 @@ img{
 }
 .nav__logo{
   color: var(--second-color);
+
 }
 .nav__toggle{
   color: var(--second-color);
@@ -196,6 +213,7 @@ img{
 .home__title{
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
+  color: var(--second-color);
 }
 .home__title-color{
   color: var(--first-color);
@@ -209,6 +227,20 @@ img{
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
   color: var(--second-color);
+}
+.dark-icon{
+  position: absolute;
+  width: max-content;
+  cursor: pointer;
+  margin-bottom: var(--mb-2);
+  font-size: 1.5rem;
+  bottom: 3%;
+  left: 88%;
+  /*padding-left: 85%;*/
+  color: var(--second-color);
+}
+.dark-icon:hover{
+color: var(--first-color);
 }
 .home__social-icon:hover{
   color: var(--first-color);
@@ -225,14 +257,14 @@ img{
 .button{
   display: inline-block;
   background-color: var(--first-color);
-  color: #fff;
+  color: var(--third-color);
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
 }
 .button:hover{
-  color: #2db1ff;
-  background-color: #fff;
+  color: var(--third-color);
+  background-color: var(--second-color);
 }
 
 /* ===== ABOUT =====*/
@@ -242,6 +274,10 @@ img{
 }
 .about__subtitle{
   margin-bottom: var(--mb-2);
+  color: var(--second-color);
+}
+.about__text{
+  color: var(--fourth-color);
 }
 .about__img{
   justify-self: center;
@@ -282,6 +318,9 @@ img{
   display: flex;
   align-items: center;
 }
+.skills__name,.skills__percentage{
+  color: var(--second-color);
+}
 .skills__bar{
   position: absolute;
   left: 0;
@@ -313,6 +352,15 @@ img{
   width: 40%;
 }
 .skills__bootstrap{
+  width: 80%;
+}.skills__uml{
+  width: 80%;
+}.skills__git{
+  width: 80%;
+}.skills__github{
+  width: 75%;
+}
+.skills__sql{
   width: 80%;
 }
 
@@ -467,3 +515,6 @@ img{
     right: 10%;
   }
 }
+
+/*dark mode*/
+
