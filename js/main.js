@@ -63,6 +63,7 @@ var icon = document.getElementById("dark");
 icon.onclick = function(){
     document.body.classList.toggle("dark-theme");
     icon.classList.toggle("fa-sun");
+    
 }
 
 
