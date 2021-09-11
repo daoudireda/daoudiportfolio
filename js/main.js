@@ -62,14 +62,7 @@ var icon = document.getElementById("dark");
 
 icon.onclick = function(){
     document.body.classList.toggle("dark-theme");
-    if (document.body.classList.contains("dark-theme")) {
-        // statement
-        icon.toggle('fa-sun');
-    } else {
-        icon.toggle('fa-moon')
-
-        // statement
-    }
+    icon.classList.toggle("fa-sun");
 }
 
 
