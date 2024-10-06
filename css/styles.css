@@ -339,6 +339,12 @@ color: var(--first-color);
 .skills__js{
   width: 65%;
 }
+.skills__angular{
+  width: 70%;
+}
+.skills__react,.skills__elastic{
+  width: 55%;
+}
 .skills__ux{
   width: 40%;
 }
@@ -360,7 +366,7 @@ color: var(--first-color);
 }.skills__github{
   width: 75%;
 }
-.skills__sql{
+.skills__sql,.skills__java{
   width: 80%;
 }
 
